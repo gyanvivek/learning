@@ -1,6 +1,6 @@
 import React from "react";
 import {Nav} from "react-bootstrap";
-import SideNavigation from "./sideNavigation";
+import SideNavigation from "../../blocks/sidenav/sideNavigation";
 
 const paths =  [{href:"home",title:"home"},
 {href:"home",title:"home"},
