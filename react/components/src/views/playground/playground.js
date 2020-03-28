@@ -6,14 +6,16 @@ import RamenItem from "../../demo/ramenItem/ramenItem";
 
 const paths = [
   { href: "home", title: "home" },
+  { href: "components", title: "Components" },
+  { href: "demo", title: "Demo" },
   { href: "home", title: "home" },
-  { href: "home", title: "home" },
-  { href: "home", title: "home" },
-  [
-    { href: "home", title: "home" },
-    { href: "home", title: "home" },
-    { href: "home", title: "home" }
+  { title: "haschidren",
+    child:[ 
+    { href: "sub1", title: "Sub1" },
+    { href: "sub2", title: "Sub2" },
+    { href: "sub3", title: "Sub3" }
   ]
+}
 ];
 
 const data = {
@@ -29,19 +31,10 @@ const Playground = () => {
   const [navState, setNavState] = useState(true);
   return (
     <div>
-      {/* <Button onClick={()=>setNavState(!navState)}> Toggle </Button>
-         <SideNavigation paths={paths} value={{state:navState}}/> */}
-      <RamenItem
-        brand={data.Brand}
-        variety={data.Variety}
-        style={data.Style}
-        country={data.Country}
-        stars={data.Stars}
-        year={data["Top Ten"].split(" ")[0]}
-        ranking={data["Top Ten"].split(" ")[1]}
-      />
+     <Button onClick={()=>setNavState(!navState)}> Toggle </Button>
+         <SideNavigation paths={paths} value={{state:navState}}/>
     </div>
-  );
+   );
 };
 
 export default Playground;

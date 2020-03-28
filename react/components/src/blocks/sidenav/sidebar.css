@@ -1,0 +1,14 @@
+.chevron {
+    position: relative;
+    top: 100px;
+    text-align: center;
+    padding: 12px;
+    margin-bottom: 6px;
+    height: 60px;
+    width: 200px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }

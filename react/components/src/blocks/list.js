@@ -1,6 +1,6 @@
 
 const List = ({list,renderItem})=>{
-   return (list?list.map((iitem,index)=>renderItem(iitem,index)):null)
+   return (list?list.map((item,index)=>renderItem(item,index)):null)
 }
 
-export const List;
+export default List;
